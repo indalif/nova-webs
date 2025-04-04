@@ -1,32 +1,20 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  // ✅ Inicializar EmailJS con tu clave pública
   emailjs.init("6g0Dz3hEh1mmrDHZY");
   console.log("✅ EmailJS inicializado correctamente");
-
-  // ✅ Capturar el formulario
   let form = document.querySelector("#contact-form");
-
   if (!form) {
       console.error("❌ Error: No se encontró el formulario #contact-form");
       return;
   }
-
   form.addEventListener("submit", function (event) {
       event.preventDefault();
-
-      // ✅ Capturar los valores del formulario
       let formData = {
           user_name: document.querySelector("input[name='user_name']").value,
           user_email: document.querySelector("input[name='user_email']").value,
           subject: document.querySelector("input[name='subject']").value,
           message: document.querySelector("textarea[name='message']").value
       };
-
       console.log("📩 Enviando datos:", formData);
-
-      // ✅ Mostrar mensaje de "Cargando..."
       let loading = document.querySelector(".loading");
       let errorMessage = document.querySelector(".error-message");
       let sentMessage = document.querySelector(".sent-message");
@@ -34,23 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
       loading.style.display = "block";
       errorMessage.style.display = "none";
       sentMessage.style.display = "none";
-
-      // ✅ Enviar el email usando EmailJS
       emailjs.send("service_lpa1852", "template_7x7u5du", formData, "6g0Dz3hEh1mmrDHZY")
           .then((response) => {
               console.log("✅ Enviado con éxito:", response);
-              
-              // ✅ Ocultar mensaje de carga y mostrar éxito
               loading.style.display = "none";
               sentMessage.style.display = "block";
-
-              // ✅ Limpiar el formulario
               form.reset();
           })
           .catch((error) => {
               console.error("❌ Error al enviar:", error);
-              
-              // ✅ Ocultar mensaje de carga y mostrar error
               loading.style.display = "none";
               errorMessage.style.display = "block";
               errorMessage.innerText = "Hubo un error al enviar el mensaje. Inténtalo de nuevo.";
