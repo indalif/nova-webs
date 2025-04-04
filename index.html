@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+<a href="https://wa.me/+5493884763234?text=%C2%A1Hola!%20Quiero%20potenciar%20mi%20negocio%20con%20una%20p%C3%A1gina%20web%20o%20un%20sistema%20a%20medida.%20Me%20gustar%C3%ADa%20conocer%20las%20opciones%20y%20precios.%20%C2%BFMe%20pueden%20asesorar?" 
+   class="whatsapp-float" target="_blank">
+    <div class="whatsapp-container">
+        <div class="whatsapp-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        </div>
+        <span class="whatsapp-text">💬¡Chatea con nosotras!</span>
+    </div>
+</a>
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        text-decoration: none;
+        z-index: 1000;
+    }
+    .whatsapp-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .whatsapp-bubble {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #25d366, #128C7E);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: bounce 1.0s infinite ease-in-out;
+    }
+    .whatsapp-bubble img {
+        width: 45px;
+        height: 45px;
+        border-radius: 45%;
+        background: transparent;
+    }
+    .whatsapp-float:hover .whatsapp-bubble {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        filter: brightness(0.9);
+    }
+    .whatsapp-text {
+        background: linear-gradient(135deg, #25d366, #128C7E);
+        color: white;
+        padding: 12px 18px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        white-space: nowrap;
+    }
+    .whatsapp-float:hover .whatsapp-text {
+        opacity: 1;
+        transform: translateX(0);
+        filter: brightness(0.9);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+</style>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename"><img src="/assets/img/Imagen_de_WhatsApp_2025-03-31_a_las_15.16.27_e34d3b5e-removebg-preview.png" alt=""></h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Sobre Nosotras</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">Preguntas Frecuentes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/details-1.png" class="img-fluid animated" alt="">
+          </div>
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1><span>NOVAWEBS</span></h1>
+            <p>Desarrollamos soluciones digitales a medida para potenciar negocios. Nuestro objetivo es crear páginas
+              web y sistemas eficientes que combinen tecnología, diseño y funcionalidad para ayudar a empresas y
+              emprendedores a crecer en el mundo digital.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Comenzar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section>
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h2>Sobre Nosotras</h2>
+            <p>Somos dos programadoras graduadas de la Universidad Tecnologica Nacional-FRT apasionadas por la
+              tecnología y la innovación, unidas por un propósito: impulsar negocios a través de soluciones digitales
+              personalizadas. Nos especializamos en desarrollar proyectos a medida, adaptándonos a las necesidades de
+              cada cliente para ofrecer herramientas eficientes, modernas y funcionales.
+
+              Creemos en el poder de la tecnología para transformar ideas en realidades exitosas. Ya sea que necesites
+              una web que refleje la identidad de tu marca, una aplicación que optimice tus procesos o una solución
+              digital que te ayude a crecer, estamos aquí para hacerlo posible.
+
+              Trabajamos contigo, entendiendo tu visión y convirtiéndola en soluciones concretas que potencien tu
+              negocio. Porque tu éxito es nuestro compromiso.</p>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="#contact" class="icon-box-link">
+                  <div class="icon-box">
+                    <i class="bi bi-globe"></i> 
+                    <h3>✅ Desarrollo de Páginas Web</h3>
+                    <p>Creamos sitios web modernos, funcionales y adaptados a cualquier dispositivo, diseñados para
+                      destacar tu negocio y atraer más clientes.</p>
+                  </div>
+                </a>
+              </div> 
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <a href="#contact" class="icon-box-link">
+                  <div class="icon-box">
+                    <i class="bi bi-layers"></i> 
+                    <h3>💻 Desarrollo de Sistemas a Medida</h3>
+                    <p>Diseñamos y programamos soluciones personalizadas que optimizan procesos, automatizan tareas y
+                      mejoran la eficiencia de tu empresa.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="icon-box-link">
+                  <div class="icon-box">
+                    <i class="bi bi-plug"></i> 
+                    <h3>🤖 Integración de APIs y Chatbots</h3>
+                    <p>Conectamos tu negocio con herramientas externas y desarrollamos chatbots inteligentes para
+                      mejorar la experiencia del usuario y agilizar la comunicación.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <a href="#contact" class="icon-box-link">
+                  <div class="icon-box">
+                    <i class="bi bi-tools"></i>
+                    <h3>⚙️ Mantenimiento y Optimización</h3>
+                    <p>Mejoramos el rendimiento, la seguridad y la velocidad de tus plataformas digitales, asegurando
+                      que siempre funcionen de manera óptima.</p>
+                  </div>
+                </a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="features section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-file-code" style="color: #ffbb2c;"></i> 
+              <h3>HTML</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-palette" style="color: #5578ff;"></i> 
+              <h3>CSS</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-filetype-js" style="color: #e80368;"></i>
+              <h3>JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-box" style="color: #e361ff;"></i> 
+              <h3>Bootstrap</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="features-item">
+              <i class="bi bi-terminal" style="color: #47aeff;"></i> 
+              <h3>Node.js</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="features-item">
+              <i class="bi bi-database" style="color: #ffa76e;"></i> 
+              <h3>Base de Datos</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="features-item">
+              <i class="bi bi-plug" style="color: #11dbcf;"></i> 
+              <h3>APIs</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="features-item">
+              <i class="bi bi-cpu" style="color: #4233ff;"></i> 
+              <h3>Inteligencia Artificial</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Gallery Section -->
+      <!-- <section id="gallery" class="gallery section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div><span>Check Our</span> <span class="description-title">Gallery</span></div>
+      </div>End Section Title 
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div> 
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>/Gallery Section GALERIAAAAAAAAAAA -->
+      <br>
+      <br>
+      <br>
+      <section id="testimonials" class="testimonials section dark-background">
+        <img src="assets/img/0b862310cc66749a77abf9f3b7e65cd4.jpg" class="testimonials-bg" alt="">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3> Mariana López </h3>
+                  <h4> Dueña de Tienda de Ropa Online</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>
+                      Gracias al desarrollo de mi tienda online, ahora puedo vender mis productos en todo el país sin
+                      complicaciones. La web es rápida, fácil de usar y se adapta perfectamente a celulares y
+                      computadoras. ¡Excelente trabajo!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3> Javier Ramírez </h3>
+                  <h4>CEO de Agencia de Marketing</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>El mantenimiento y la optimización de nuestra web marcaron la diferencia en la velocidad y
+                      seguridad. Desde la optimización SEO hasta la seguridad, todo fue mejorado con gran
+                      profesionalismo.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Andrea Torres</h3>
+                  <h4>Propietaria de Gimnasio</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Queríamos un sistema para administrar inscripciones, pagos y horarios de clases. Nos
+                      desarrollaron una plataforma increíble, fácil de manejar y que nos ahorra mucho tiempo. ¡Un
+                      servicio impecable!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Carlos Méndez</h3>
+                  <h4>Emprendedor Gastronómico</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>La integración de un chatbot en mi sitio web me ayudó a automatizar la atención al cliente,
+                      respondiendo dudas y tomando pedidos de manera eficiente. Sin dudas, una herramienta clave para mi
+                      negocio.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>Dr. Martín Rodríguez</h3>
+                  <h4>Director de Clínica Vida Salud</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Necesitábamos un sistema personalizado para gestionar historiales médicos y turnos. Nos
+                      entregaron una solución eficiente y fácil de usar, mejorando la atención a
+                      nuestros pacientes y optimizando el trabajo del equipo. ¡Altamente recomendable!</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="team section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <div><span>Conoce nuestro</span> <span class="description-title">Team</span></div>
+        </div>
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="pic"><img src="assets/img/juli1.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Julieta Meza</h4>
+                  <span>Programadora Full Stack <br>
+                    Especialista en bakcend y base de datos</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="pic"><img src="assets/img/paula.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Paula Rodriguez</h4>
+                  <span>Programadora Full Stack <br>
+                    Especialista en frontend y diseño</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="faq" class="faq section light-background">
+        <div class="container-fluid">
+          <div class="row gy-4">
+            <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+              <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+                <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
+                <p>
+                  Encuentra respuestas a las dudas más comunes sobre nuestros servicios.
+                </p>
+              </div>
+              <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item faq-active">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Cuánto tiempo tarda el desarrollo de un proyecto?</h3>
+                  <div class="faq-content">
+                    <p>El tiempo de entrega varía según la complejidad del proyecto, pero generalmente oscila entre
+                      <strong>20 y 35 días hábiles</strong>. En tu consulta inicial, te proporcionamos un cronograma detallado.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <div class="faq-item">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Ofrecen garantía sobre los desarrollos?</h3>
+                  <div class="faq-content">
+                    <p>Sí, brindamos una <strong>garantía de 60 días</strong> posterior a la entrega para corregir
+                      cualquier error técnico relacionado con el desarrollo original.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <div class="faq-item">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Puedo solicitar cambios una vez finalizado el proyecto?</h3>
+                  <div class="faq-content">
+                    <p>Sí, cualquier cambio adicional luego de la entrega se cotizará por separado según el alcance de
+                      la modificación.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <div class="faq-item">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Se pueden integrar herramientas externas como pagos o chatbots?</h3>
+                  <div class="faq-content">
+                    <p>Sí, realizamos <strong>integraciones con APIs</strong> de terceros, como pasarelas de pago,
+                      chatbots y sistemas de gestión.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <div class="faq-item">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Cuáles son las formas de pago?</h3>
+                  <div class="faq-content">
+                    <p>Aceptamos <strong>transferencia bancaria, efectivo y financiación en cuotas</strong>. Una vez concretado el proyecto, se firmará un contrato donde se detallarán todos los términos de pago.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <div class="faq-item">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>¿Ofrecen mantenimiento y actualizaciones?</h3>
+                  <div class="faq-content">
+                    <p>Sí, contamos con planes de <strong>mantenimiento y optimización</strong> para garantizar el correcto funcionamiento y seguridad de tu sistema o página web.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2">
+              <img src="assets/img/faq.jpg" class="img-fluid" alt="Preguntas Frecuentes" data-aos="zoom-in"
+                data-aos-delay="100">
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contact" class="contact section">
+      <div class="container section-title">
+        <h2>Contacto</h2>
+        <div><span>Ponte en</span> <span class="description-title">Contacto <br> con nosotras</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <h3>Teléfonos</h3>
+                <p>3884763234</p>
+                <p>3815678649</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>novaa.webs1@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <form id="contact-form">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="user_name" class="form-control" placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="user_email" class="form-control" placeholder="Tu Email" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea name="message" class="form-control" rows="6" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Cargando</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" style="display: none;">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                  <button type="submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Nova Webs</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p class="mt-3"><strong>Teléfono 1:</strong> <span>3884763234</span></p>
+            <p><strong>Teléfono 2:</strong> <span>3815678649</span></p>
+            <p><strong>Email:</strong> <span>novaa.webs1@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/nova.webss/"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces útiles</h4>
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre nosotras</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faq">Preguntas Frecuentas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><a href="#contact">Desarrollo Web</a></li>
+            <li><a href="#contact">Desarrollo de Sistemas</a></li>
+            <li><a href="#contact">Integración de APIs</a></li>
+            <li><a href="#contact">Mantenimiento y Optimización</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Nova Webs</strong> <span>Todos los derechos
+          reservados</span>
+      </p>
+      <div class="credits">
+        Diseñado por <a href="#">Nova Webs</a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
