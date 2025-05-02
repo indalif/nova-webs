@@ -12,53 +12,50 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
-}
+  /* Fuentes Modernas y Tecnológicas */
+  --default-font: "Outfit", "Roboto", sans-serif;
+  --heading-font: "Orbitron", "Raleway", sans-serif;
+  --nav-font: "Outfit", "Poppins", sans-serif;
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #0a0a2a; /* Azul profundo para el fondo */
-  --default-color: #d0d0e1; /* Color de texto gris claro para buen contraste */
-  --heading-color: #6bdcf8; /* Azul celeste vibrante para títulos */
-  --accent-color: #8b5cf6; /* Violeta moderno para resaltar elementos */
-  --surface-color: #13133a; /* Fondo de tarjetas y secciones */
-  --contrast-color: #ffffff; /* Color de alto contraste para textos destacados */
-
-  /* Nav Menu Colors */
-  --nav-color: #d0d0e1;  
-  --nav-hover-color: #8b5cf6; /* Violeta llamativo para hover */
-  --nav-mobile-background-color: #13133a;
-  --nav-dropdown-background-color: #1a1a40;
-  --nav-dropdown-color: #d0d0e1;
-  --nav-dropdown-hover-color: #6bdcf8;
-}
-
-/* Presets para secciones claras y oscuras */
-.light-background {
-  --background-color: #f9f9ff;
-  --surface-color: #ffffff;
-  --default-color: #1a1a40;
-}
-
-.dark-background {
-  --background-color: #0a0a2a;
-  --default-color: #d0d0e1;
-  --heading-color: #6bdcf8;
-  --surface-color: #13133a;
+  /* Colores vibrantes (paleta del carrusel) */
+  --background-color: #0e0e0e; /* fondo oscuro limpio */
+  --default-color: #f0f0f0;    /* texto claro para contraste */
+  --heading-color: #00f0ff;    /* cian eléctrico */
+  --accent-color: #ff00e6;     /* fucsia neón */
+  --surface-color: #1a1a1a;    /* para tarjetas o cajas */
   --contrast-color: #ffffff;
-}
 
+  /* Nav */
+  --nav-color: #f0f0f0;
+  --nav-hover-color: #00ff99;
+  --nav-mobile-background-color: #1a1a1a;
+  --nav-dropdown-background-color: #222;
+  --nav-dropdown-color: #f0f0f0;
+  --nav-dropdown-hover-color: #ffff00;
 
-
-/* Smooth scroll */
-:root {
   scroll-behavior: smooth;
 }
 
+/* Modos claros/oscuros */
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+  --default-color: #111111;
+  --heading-color: #ff00e6;
+  --accent-color: #00f0ff;
+}
+
+.dark-background {
+  --background-color: #0e0e0e;
+  --surface-color: #1a1a1a;
+  --default-color: #f0f0f0;
+  --heading-color: #00f0ff;
+  --accent-color: #ff00e6;
+  --contrast-color: #ffffff;
+}
+
 /*--------------------------------------------------------------
-# General Styling & Shared Classes
+# General Styling
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
@@ -73,25 +70,23 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  letter-spacing: 1px;
 }
 
-/* PHP Email Form Messages */
+/*--------------------------------------------------------------
+# Email Form
+--------------------------------------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #ff3355; /* Rojo más vibrante */
-  color: #ffffff;
+  background: #ff3366;
+  color: #fff;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -100,8 +95,8 @@ h6 {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
-  background: #1acc8d; /* Verde acorde con el diseño */
+  background: #00cc88;
+  color: #fff;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -129,21 +124,17 @@ h6 {
 }
 
 @keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /*--------------------------------------------------------------
-# Global Header
+# Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(10, 10, 42, 0.9); /* Azul oscuro translúcido */
-  --default-color: #d0d0e1;
-  --heading-color: #6bdcf8;
+  --background-color: rgba(14, 14, 14, 0.95);
+  --default-color: #f0f0f0;
+  --heading-color: #00f0ff;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -167,18 +158,14 @@ h6 {
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
+  font-family: var(--heading-font);
   display: flex;
   align-items: center;
 }
 
-/* Efecto al hacer scroll */
 .scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.2);
-}
-
-/* Global Header on Scroll */
-.scrolled .header {
-  --background-color: #13133a; /* Azul oscuro más sólido */
+  background-color: #111122;
+  box-shadow: 0px 0 18px rgba(0, 255, 255, 0.3);
 }
 
 @media (min-width: 1200px) {
