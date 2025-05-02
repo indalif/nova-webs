@@ -1,49 +1,47 @@
-/* Fonts */
 :root {
   /* Fuentes Modernas y Tecnológicas */
   --default-font: "Outfit", "Roboto", sans-serif;
-  --heading-font: "Orbitron", "Raleway", sans-serif;
-  --nav-font: "Outfit", "Poppins", sans-serif;
+  --heading-font: "Orbitron", sans-serif;
+  --nav-font: "Outfit", sans-serif;
 
-  /* Colores vibrantes (paleta del carrusel) */
-  --background-color: #0e0e0e; /* fondo oscuro limpio */
-  --default-color: #f0f0f0;    /* texto claro para contraste */
-  --heading-color: #00f0ff;    /* cian eléctrico */
-  --accent-color: #ff00e6;     /* fucsia neón */
-  --surface-color: #1a1a1a;    /* para tarjetas o cajas */
-  --contrast-color: #ffffff;
+  /* Colores claros y vibrantes */
+  --background-color: #fdfdff; /* Fondo claro suave */
+  --default-color: #1a1a1a;    /* Texto general oscuro */
+  --heading-color: #00bcd4;    /* Cian vibrante para títulos */
+  --accent-color: #e91e63;     /* Fucsia fuerte para enlaces y detalles */
+  --surface-color: #ffffff;    /* Fondo de tarjetas/secciones */
+  --contrast-color: #111111;
 
   /* Nav */
-  --nav-color: #f0f0f0;
-  --nav-hover-color: #00ff99;
-  --nav-mobile-background-color: #1a1a1a;
-  --nav-dropdown-background-color: #222;
-  --nav-dropdown-color: #f0f0f0;
-  --nav-dropdown-hover-color: #ffff00;
+  --nav-color: #1a1a1a;
+  --nav-hover-color: #00c853; /* Verde lima brillante */
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #f2f2f2;
+  --nav-dropdown-color: #1a1a1a;
+  --nav-dropdown-hover-color: #ff9800; /* Naranja vibrante */
 
   scroll-behavior: smooth;
 }
 
-/* Modos claros/oscuros */
+/* Presets para secciones */
 .light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
-  --default-color: #111111;
-  --heading-color: #ff00e6;
-  --accent-color: #00f0ff;
+  --background-color: #ffffff;
+  --surface-color: #f9f9f9;
+  --default-color: #1a1a1a;
+  --heading-color: #00bcd4;
+  --accent-color: #e91e63;
 }
 
 .dark-background {
-  --background-color: #0e0e0e;
+  --background-color: #111111;
   --surface-color: #1a1a1a;
   --default-color: #f0f0f0;
   --heading-color: #00f0ff;
   --accent-color: #ff00e6;
-  --contrast-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
-# General Styling
+# Estilos Generales
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
@@ -59,22 +57,22 @@ a {
 
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 /*--------------------------------------------------------------
-# Email Form
+# Formulario Email
 --------------------------------------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #ff3366;
-  color: #fff;
+  background: #ff5252;
+  color: #ffffff;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -83,8 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .php-email-form .sent-message {
   display: none;
-  background: #00cc88;
-  color: #fff;
+  background: #00c853;
+  color: #ffffff;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -112,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes php-email-form-loading {
-  0%   { transform: rotate(0deg); }
+  0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
@@ -120,14 +118,15 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(14, 14, 14, 0.95);
-  --default-color: #f0f0f0;
-  --heading-color: #00f0ff;
+  --background-color: rgba(255, 255, 255, 0.95);
+  --default-color: #1a1a1a;
+  --heading-color: #00bcd4;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .header .logo {
@@ -136,13 +135,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .logo img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 28px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -151,9 +150,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+/* Header con scroll */
 .scrolled .header {
-  background-color: #111122;
-  box-shadow: 0px 0 18px rgba(0, 255, 255, 0.3);
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 @media (min-width: 1200px) {
